@@ -1,0 +1,18 @@
+site_name: Finauto Client Documentation
+site_description: Help and Documentation for Finauto Client
+theme:
+  name: material
+  language: en
+
+nav:
+  - Home: index.md
+  - Client:
+      - Introduction: client/intro.md
+      - Installation: client/install.md
+      - Usage:
+          - Basic: client/usage/basic.md
+          - Advanced: client/usage/advanced.md
+  - Reference:
+      - Configuration: reference/config.md
+  - FAQ:
+      - Common Issues: faq/common-issues.md
