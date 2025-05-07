@@ -12,6 +12,8 @@ nav:
       - Usage:
           - Basic: client/usage/basic.md
           - Advanced: client/usage/advanced.md
+      - Features:
+          - Fixed Assets Register: client/depreciation/fixed_assets.md
   - Reference:
       - Configuration: reference/config.md
   - FAQ:
