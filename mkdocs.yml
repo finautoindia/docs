@@ -1,7 +1,7 @@
 site_name: Finauto Client Documentation
 site_description: Help and Documentation for Finauto Client
 theme:
-  name: material
+  name: readthedocs
   language: en
 
 nav:
