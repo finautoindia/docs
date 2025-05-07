@@ -1,9 +1,39 @@
-site_name: Finauto Client Documentation
-site_description: Help and Documentation for Finauto Client
+site_name: Finauto Docs
+site_description: Help and Documentation for Finauto Software
 theme:
-  name: readthedocs
+  name: material
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.ico
   language: en
-
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+    - content.tabs.link
+    - content.code.copy
+    - header.autohide
+  markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - toc:
+        permalink: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
 nav:
   - Home: index.md
   - Client:
