@@ -1,0 +1,1 @@
+c:\Users\win10\appdata\local\programs\python\python312\scripts\mkdocs serve

@@ -45,7 +45,16 @@ nav:
       - Features:
           - Fixed Assets:
             - Register: client/depreciation/fixed_assets.md
-  - Reference:
-      - Configuration: reference/config.md
-  - FAQ:
-      - Common Issues: faq/common-issues.md
+          - Share Capital:
+            - Import Process: client/sharecapital/importprocess.md
+          - Trial Balance:
+            - View Ledgers & Stock items : client/trialbalance/trialbalanceview.md
+          - Aging:
+            - Aging Report : client/aging/agingreport.md
+          - Reports:  
+            - Accounting Policies : client/reports/accountingpolicies.md
+          - Configuration: 
+            - Company Master: configuration/companymaster.md
+      - FAQ:
+          - Common Issues: faq/common-issues.md
+                
