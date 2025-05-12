@@ -55,6 +55,9 @@ nav:
             - Accounting Policies : client/reports/accountingpolicies.md
           - Configuration: 
             - Company Master: configuration/companymaster.md
+            - Updates      : configuration/updates.md
+            - CA Profiles      : configuration/caprofiles.md
+            - Settings     : configuration/settings.md
       - FAQ:
           - Common Issues: faq/common-issues.md
                 
