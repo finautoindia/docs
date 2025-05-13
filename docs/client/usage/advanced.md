@@ -4,7 +4,7 @@ The **Advanced Usage** of Finauto builds upon the basic functionality by enablin
 
 ### ✅ What’s Included
 
-In addition to everything covered under [**Basic Usage**](#basic-usage-of-the-software), the advanced setup includes:
+In addition to everything covered under [**Basic Usage**](../usage/basic.md), the advanced setup includes:
 
 - 🧾 **Fixed Assets Module**  
   Enables creation and management of a full **PPE Register**, along with automatic calculation of depreciation and plotting of the **PPE Notes** in the Balance Sheet.
@@ -16,8 +16,8 @@ In addition to everything covered under [**Basic Usage**](#basic-usage-of-the-so
 
 ### 📚 Learn More
 
-- 🔗 [View Fixed Assets Module](../fixed-assets.md#fixed-assets-register-import)
-- 🔗 [View Share Capital Module](../share-capital.md#share-capital-import-process)
+- 🔗 [View Fixed Assets Module](../depreciation/fixed_assets.md)
+- 🔗 [View Share Capital Module](../sharecapital/importprocess.md)
 
 ---
 

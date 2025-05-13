@@ -63,9 +63,9 @@ Before starting, add the Finauto plugin in Tally:
 
 ✅ A screenshot is provided below to guide plugin placement.
 
-![tallyhelpf4 Tab Screenshot](../../assets/images/tallyhelpf4.PNG)
+![tallyhelpf4 Tab Screenshot](../assets/images/tallyhelpf4.PNG)
 
-![tallytdlconfig Tab Screenshot](../../assets/images/tallytdlconfig.PNG)
+![tallytdlconfig Tab Screenshot](../assets/images/tallytdlconfig.PNG)
 
 ## 🔌<span style="color:#2ecc71">6. Set Up the ODBC Settings in Tally</span>
 
@@ -83,10 +83,10 @@ d. Press `Enter` repeatedly to exit and save the configuration.
 
 ✅ A screenshot is provided below to guide you through the ODBC setup in Tally.
 
-![ODBCSet Tab Screenshot](../../assets/images/ODBCSet.PNG)
-![odbcopt Tab Screenshot](../../assets/images/odbcopt.PNG)
-![optionchoose Tab Screenshot](../../assets/images/optionchoose.PNG)
-![odbcclose Tab Screenshot](../../assets/images/odbcclose.PNG)
+![ODBCSet Tab Screenshot](../assets/images/ODBCSet.PNG)
+![odbcopt Tab Screenshot](../assets/images/odbcopt.PNG)
+![optionchoose Tab Screenshot](../assets/images/optionchoose.PNG)
+![odbcclose Tab Screenshot](../assets/images/odbcclose.PNG)
 ---
 
 ## 🚀 <span style="color:#2ecc71">7. You're Ready to Use the Software</span>
@@ -133,8 +133,8 @@ If **any ledger** with an **opening or closing balance** is **not assigned a cod
 📸 Refer to the screenshots below for:
 
 - Group/Ledger code entry screen in Tally.
-![grouplevelcode Screenshot](../../assets/images/grouplevelcode.PNG)
-![ledgerlevelcode Screenshot](../../assets/images/ledgerlevelcode.PNG)
+![grouplevelcode Screenshot](../assets/images/grouplevelcode.PNG)
+![ledgerlevelcode Screenshot](../assets/images/ledgerlevelcode.PNG)
 
 
 - Error prompt shown in the Finauto client if codes are missing.

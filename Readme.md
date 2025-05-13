@@ -7,6 +7,7 @@ At **Finautoindia**, we are passionate about revolutionizing the finance automat
 
 ### 🔧 What We Do
 - **Smart Report**: Tools to simplify creation of compliant finanacial statements.
+- **Docs**: [https://finautoindia.github.io/docs](https://finautoindia.github.io/docs)
 
 ---
 

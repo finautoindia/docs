@@ -1,1 +1,1 @@
-$PYTHON_PATH/Scripts/mkdocs gh-deploy
+$PYTHON_PATH/Scripts/mkdocs gh-deploy --clean
