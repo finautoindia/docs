@@ -1,0 +1,56 @@
+# FinAuto Client Documentation
+
+FinAuto Client is a Windows desktop application for importing trial balances from Tally or Excel, coding ledgers, and generating Schedule III–ready financial statements with fixed assets, share capital, and aging modules.
+
+## Client articles
+
+- https://finautoindia.github.io/docs/client/intro/
+- https://finautoindia.github.io/docs/client/install/
+- https://finautoindia.github.io/docs/client/company/index/
+- https://finautoindia.github.io/docs/client/company/branches/
+- https://finautoindia.github.io/docs/client/company/fyear/
+- https://finautoindia.github.io/docs/client/company/export/
+- https://finautoindia.github.io/docs/client/import/excel/
+- https://finautoindia.github.io/docs/client/import/import-data/
+- https://finautoindia.github.io/docs/client/import/other-formats/
+- https://finautoindia.github.io/docs/client/import/tally/
+- https://finautoindia.github.io/docs/client/import/resolve-conflict/
+- https://finautoindia.github.io/docs/client/trial-balance/ledgers/
+- https://finautoindia.github.io/docs/client/trial-balance/stock/
+- https://finautoindia.github.io/docs/client/aging/vouchers/
+- https://finautoindia.github.io/docs/client/aging/payables/
+- https://finautoindia.github.io/docs/client/aging/receivables/
+- https://finautoindia.github.io/docs/client/aging/report/
+- https://finautoindia.github.io/docs/client/depreciation/register/
+- https://finautoindia.github.io/docs/client/depreciation/asset-shifts/
+- https://finautoindia.github.io/docs/client/depreciation/chart/
+- https://finautoindia.github.io/docs/client/depreciation/by-asset/
+- https://finautoindia.github.io/docs/client/share/authorized/
+- https://finautoindia.github.io/docs/client/share/issued/
+- https://finautoindia.github.io/docs/client/share/buyback/
+- https://finautoindia.github.io/docs/client/share/holders/
+- https://finautoindia.github.io/docs/client/share/subscribed/
+- https://finautoindia.github.io/docs/client/share/payments/
+- https://finautoindia.github.io/docs/client/share/transfer-logs/
+- https://finautoindia.github.io/docs/client/share/holding-report/
+- https://finautoindia.github.io/docs/client/reports/balance-sheet/
+- https://finautoindia.github.io/docs/client/reports/customize/
+
+## Configuration articles
+
+- https://finautoindia.github.io/docs/configuration/updates/
+- https://finautoindia.github.io/docs/configuration/caprofiles/
+- https://finautoindia.github.io/docs/configuration/service/
+- https://finautoindia.github.io/docs/configuration/coding/
+- https://finautoindia.github.io/docs/configuration/cache/
+- https://finautoindia.github.io/docs/configuration/tally/
+
+## FAQ
+
+- https://finautoindia.github.io/docs/faq/common-issues/
+
+## AI corpus (operators)
+
+After `mkdocs build`, RAG chunks are exported to `site/ai/corpus.jsonl` (not published to GitHub Pages by default). Use `scripts/validate_corpus.py` and `scripts/rag_smoke.py` before enabling agent ingestion.
+
+Support: support@finautoindia.com — do not share API keys or PAN in email.

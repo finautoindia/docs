@@ -1,33 +1,57 @@
-The CA Profiles tab allows you to create and manage Chartered Accountant (CA) profiles used across the system.
+---
+title: CA Profiles
+client_version: "9.0"
+controller: ca
+function: profile
+keywords:
+  - ca profile
+  - chartered accountant
+  - balance sheet salutation
+symptoms:
+  - ca name missing on balance sheet
+---
 
-🧾 Purpose
-CA profiles are used to assign a practicing Chartered Accountant to companies. The assigned CA’s details will be printed in the Balance Sheet salutation when the statement is generated.
+# CA profiles
 
-🛠️ How to Create a CA Profile
-Go to Configuration → CA Profiles.
+Create and manage Chartered Accountant profiles printed on balance sheet salutations.
 
-Click on "Add New" or the ➕ button.
+## Prerequisites
 
-Enter the required details:
+- Access to **Configuration → CA Profiles**
 
-Name of the CA
+## Steps
 
-Firm Name
+### Step 1: Create a profile
 
-Membership Number
+1. Open **Configuration → CA Profiles**.
+2. Click **Add** and enter:
 
-Address / Contact details (optional)
+![CA profiles grid with add action](../assets/images/configuration/caprofiles-01.png)
 
-Click Save.
+   - CA name
+   - Firm name
+   - Membership number
+   - Address (optional)
+3. Save.
 
-🔗 Linking with Company Master
-After a CA profile is created, go to Company Master.
+### Step 2: Assign to company
 
-Select the company to which the CA is to be assigned.
+1. Open [Manage company](../client/company/index.md).
+2. Edit the company and select the **CA profile** from the dropdown.
+3. Save.
 
-Choose the desired CA from the CA Profile dropdown.
+## Related links
 
-Save the changes.
+- [Balance sheet](../client/reports/balance-sheet.md)
+- [Manage company](../client/company/index.md)
 
-📄 Where It Appears
-The selected CA’s name and firm will appear at the bottom of the Balance Sheet, under the salutation or certification section.
+## Troubleshooting
+
+| Symptom | Likely cause | Resolution |
+|---------|--------------|------------|
+| CA not on balance sheet | Profile not assigned | Set CA on company record |
+| Wrong CA printed | Multiple branches | Set profile on correct company entity |
+
+See also [Common issues](../faq/common-issues.md).
+
+**Need more help?** Contact [support@finautoindia.com](mailto:support@finautoindia.com). Do not share API keys or PAN in email.

@@ -1,0 +1,252 @@
+/* FinAuto brand theme — aligned with finauto server + client (finauto-theme.css) */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
+
+:root,
+[data-md-color-scheme="default"] {
+  --fa-primary: #0f4c81;
+  --fa-primary-dark: #0a3558;
+  --fa-secondary: #00a676;
+  --fa-accent: #00a676;
+  --fa-accent-bright: #34d399;
+  --fa-gold: #d4af37;
+  --fa-surface: #f8fafc;
+  --fa-surface-alt: #f0f9ff;
+  --fa-text: #1f2937;
+  --fa-text-muted: #64748b;
+  --fa-gradient-hero: linear-gradient(135deg, #0f4c81 0%, #0a5a8c 45%, #00a676 100%);
+  --fa-radius: 16px;
+  --fa-radius-sm: 10px;
+
+  --md-primary-fg-color: var(--fa-primary);
+  --md-primary-fg-color--light: #0a5a8c;
+  --md-primary-fg-color--dark: var(--fa-primary-dark);
+  --md-primary-bg-color: var(--fa-surface);
+  --md-accent-fg-color: var(--fa-secondary);
+  --md-accent-bg-color: #ecfdf5;
+  --md-default-fg-color: var(--fa-text);
+  --md-default-fg-color--light: var(--fa-text-muted);
+  --md-default-bg-color: #ffffff;
+  --md-code-bg-color: var(--fa-surface);
+  --md-typeset-a-color: var(--fa-primary);
+}
+
+[data-md-color-scheme="slate"] {
+  --fa-primary: #60a5fa;
+  --fa-primary-dark: #3b82f6;
+  --fa-secondary: #34d399;
+  --fa-accent: #34d399;
+  --fa-surface: #0f172a;
+  --fa-surface-alt: #1e293b;
+  --fa-text: #e2e8f0;
+  --fa-text-muted: #cbd5e1;
+  --fa-gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #065f46 100%);
+
+  --md-primary-fg-color: #93c5fd;
+  --md-primary-fg-color--light: #bfdbfe;
+  --md-primary-fg-color--dark: #60a5fa;
+  --md-accent-fg-color: var(--fa-secondary);
+  --md-default-fg-color: var(--fa-text);
+  --md-default-fg-color--light: var(--fa-text-muted);
+  --md-default-bg-color: #0f172a;
+  --md-typeset-a-color: #93c5fd;
+  --md-code-bg-color: #1e293b;
+}
+
+body,
+.md-typeset {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-header__title,
+.md-nav__title {
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.md-header {
+  background: var(--fa-gradient-hero);
+  color: #fff;
+}
+
+.md-header__button,
+.md-header__title,
+.md-header__topic {
+  color: #fff;
+}
+
+.md-tabs {
+  background: var(--fa-primary-dark);
+  color: #fff;
+}
+
+.md-tabs__link {
+  color: rgba(255, 255, 255, 0.85);
+  opacity: 1;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #fff;
+}
+
+.md-typeset h2 {
+  color: var(--fa-primary);
+  border-bottom: 2px solid rgba(15, 76, 129, 0.12);
+  padding-bottom: 0.35rem;
+}
+
+.md-typeset h3 {
+  color: var(--fa-secondary);
+}
+
+.md-typeset a:hover {
+  color: var(--fa-primary-dark);
+}
+
+.md-typeset .md-button--primary,
+.md-typeset a.md-button--primary {
+  background: var(--fa-gradient-hero);
+  border: 0;
+  border-radius: var(--fa-radius-sm);
+  color: #fff;
+  font-weight: 600;
+}
+
+.md-typeset .md-button--primary:hover {
+  filter: brightness(1.05);
+}
+
+.md-search__form {
+  border-radius: var(--fa-radius-sm);
+}
+
+.md-footer {
+  background: var(--fa-primary-dark);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.md-footer-meta {
+  background: #071f33;
+}
+
+/* Homepage / marketing blocks in markdown */
+.fa-docs-hero {
+  background: var(--fa-gradient-hero);
+  border-radius: var(--fa-radius);
+  color: #fff;
+  margin: 0 0 2rem;
+  padding: 2rem 2.25rem;
+}
+
+.fa-docs-hero h1 {
+  border: 0;
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+}
+
+.fa-docs-hero p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.05rem;
+  margin: 0;
+  max-width: 52rem;
+}
+
+.fa-docs-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 1.5rem 0 2rem;
+}
+
+.fa-docs-card {
+  background: #fff;
+  border: 1px solid rgba(15, 76, 129, 0.1);
+  border-radius: var(--fa-radius-sm);
+  box-shadow: 0 8px 30px rgba(8, 47, 73, 0.08);
+  padding: 1.25rem 1.35rem;
+}
+
+.fa-docs-card h3 {
+  color: var(--fa-primary);
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.fa-docs-card p,
+.fa-docs-card li {
+  color: var(--fa-text-muted);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+.fa-docs-card ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.fa-docs-section-title {
+  color: var(--fa-primary);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+}
+
+.fa-docs-accent {
+  color: var(--fa-secondary);
+  font-weight: 600;
+}
+
+.fa-docs-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--fa-gradient-hero);
+  border-radius: var(--fa-radius-sm);
+  color: #fff !important;
+  font-weight: 600;
+  margin-top: 0.75rem;
+  padding: 0.55rem 1rem;
+  text-decoration: none !important;
+}
+
+.fa-docs-cta:hover {
+  filter: brightness(1.06);
+}
+
+[data-md-color-scheme="slate"] .fa-docs-card {
+  background: var(--fa-surface-alt);
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+[data-md-color-scheme="slate"] .fa-docs-card p,
+[data-md-color-scheme="slate"] .fa-docs-card li {
+  color: var(--fa-text-muted);
+}
+
+/* Bootstrap Icons inline in markdown */
+.fa-docs-icon {
+  color: var(--fa-primary);
+  font-size: 1.1em;
+  margin-right: 0.35rem;
+  vertical-align: -0.125em;
+}
+
+.fa-docs-card-icon {
+  display: block;
+  height: 48px;
+  margin-bottom: 0.75rem;
+  width: 48px;
+}
+
+.fa-docs-card-with-icon h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

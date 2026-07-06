@@ -1,72 +1,72 @@
-<h2 style="font-weight: bold; color: #0073e6;">📘 Software Overview – Finauto</h2>
+---
+title: Software Overview
+client_version: "9.0"
+keywords:
+  - overview
+  - modules
+  - finauto client
+symptoms: []
+---
 
-Welcome to Finauto, your intelligent automation platform for preparing financial statements, regulatory reports, and audit-ready schedules — all in one place. Designed for CAs, accounting professionals, and corporate users, Finauto bridges the gap between raw accounting data and polished, compliant financial outputs.
+# Software overview
 
-<h3 style="color: #e67e22; font-weight: bold;">🚀 What Finauto Does</h3>
-Finauto streamlines and automates the entire backend of statutory financial reporting by:
+Welcome to FinAuto, your automation platform for financial statements, regulatory reports, and audit-ready schedules — designed for CAs, accounting professionals, and corporate users.
 
--   Importing and processing accounting data from Tally, Excel, or other ERPs
+## What FinAuto does
 
--   Generating Schedule III-compliant financial statements
+FinAuto streamlines and automates the entire backend of statutory financial reporting by:
 
--   Auto-plotting reports like Trial Balance, Fixed Assets Register, Share Capital, Aging Reports, and more
+- Importing and processing accounting data from Tally, Excel, or other ERPs
+- Generating Schedule III-compliant financial statements
+- Auto-plotting reports like Trial Balance, Fixed Assets Register, Share Capital, Aging Reports, and more
+- Enabling easy configuration for quarterly, half-yearly, or annual reports
+- Supporting cloud-based and local processing modes for faster troubleshooting and performance
 
--   Enabling easy configuration for quarterly, half-yearly, or annual reports
-
--   Supporting cloud-based and local processing modes for faster troubleshooting and performance
-
-<h3 style="color: #e67e22; font-weight: bold;">🔍Key Modules at a Glance</h3>
+## Key modules at a glance
 
 | Module | Description |
 |--------|-------------|
-| 💼 **Company Master** | Create/edit companies with PAN, select depreciation method (SLM/WDV), and assign CA profiles. |
-| 🏦 **Share Capital** | Import shareholder data using templates and manage changes via Tax Transfer logs. |
-| 🛠️ **Fixed Assets** | Build PPE register using WDV from audit, import additions from Tally or Excel. |
-| 📋 **Trial Balance** | Import from Tally/Excel, view and edit ledgers, and auto-code for schedule mapping. |
-| ⏱️ **Aging Reports** | Generate aging data using vouchers imported from Tally or Excel. |
-| 🔐 **API Key Settings** | Update API key every 30 days via [Finauto Login](https://www.finautoindia.com/user/login). |
-| 👨‍💼 **CA Profiles** | Create and assign CA profiles for printing in balance sheet salutation. |
-| ☁️ **Cloud Mode** | Enable cloud generation for faster reports and remote troubleshooting. |
-| 🧭 **Tally Settings** | Set Tally install path and default ODBC port (`9000`) for integration. |
+| <i class="bi bi-building"></i> **Company** | Create and edit companies with PAN, depreciation method (SLM/WDV), and CA profiles. |
+| <i class="bi bi-pie-chart"></i> **Share capital** | Import shareholder data using templates and manage transfer logs. |
+| <i class="bi bi-box-seam"></i> **Fixed assets** | Build PPE register using WDV from audit; import additions from Tally or Excel. |
+| <i class="bi bi-journal-text"></i> **Trial balance** | Import from Tally/Excel, view and edit ledgers, and auto-code for schedule mapping. |
+| <i class="bi bi-clock-history"></i> **Aging** | Generate aging data using vouchers imported from Tally or Excel. |
+| <i class="bi bi-key"></i> **Service settings** | Update API key via [FinAuto Login](https://www.finautoindia.com/user/login). |
+| <i class="bi bi-person-badge"></i> **CA profiles** | Create and assign CA profiles for balance sheet salutation. |
+| <i class="bi bi-cloud"></i> **Cloud mode** | Enable cloud generation for faster reports and remote troubleshooting. |
+| <i class="bi bi-hdd-network"></i> **Tally settings** | Set Tally install path and default ODBC port (`9000`). |
 
+![FinAuto Client main window with company bar and navigation](../assets/images/company/company-index-01.png)
 
+## Seamless integration & automation
 
-<h3 style="color: #e67e22; font-weight: bold;">⚡ Seamless Integration & Automation</h3>
+Whether you import from Tally or work on Excel-based records, FinAuto provides:
 
-Whether you're importing from Tally or working on Excel-based records, Finauto adapts with:
+- Auto-coding of trial balance items
+- Customizable templates for each report type
+- Audit-ready notes and schedules with consistent formatting
+- One-click client updates to stay current
 
--   Auto-coding of trial balance items
+## Secure & configurable
 
--   Customizable templates for each report type
+- API key authentication for cloud integration
+- Multiple options for report frequency and cloud enablement
+- Custom depreciation logic, asset categorization, and trial balance codes
 
--   Audit-ready notes and schedules with zero manual formatting
+## Why FinAuto?
 
--   One-click EXE updates to ensure your software is always current
+- Eliminates repetitive data entry
+- Supports compliance workflows under the Companies Act, 2013
+- Simplifies collaboration between clients and auditors
+- Saves time for firms handling multiple entities
+- Supports CA firm branding in financial outputs
 
-<h3 style="color: #e67e22; font-weight: bold;">🔐 Secure & Configurable</h3>
+## Get started
 
--   🔑 API Key authentication ensures secure integration
+1. [Log in to FinAuto](https://www.finautoindia.com/user/login)
+2. Follow [Installation](install.md)
+3. Import trial balance data and configure your company master
 
--   🧩 Multiple configuration options for report frequency and cloud enablement
+## Troubleshooting
 
--   🛠️ Custom depreciation logic, asset categorization, and trial balance codes
-
-<h3 style="color: #e67e22; font-weight: bold;">📈 Why Finauto?</h3>
-
-✅ Eliminates repetitive data entry
-
-✅ Ensures compliance with the Companies Act, 2013
-
-✅ Simplifies collaboration between clients and auditors
-
-✅ Saves time for firms handling multiple clients
-
-✅ Supports CA firm branding in financial outputs
-
-<h3 style="color: #e67e22; font-weight: bold;">🌐 Get Started?</h3>
-
-👉 Login to Finauto
-
-👉 Start by importing your Trial Balance, configuring your Company Master, and enabling key modules like Fixed Assets and Share Capital.
-
-
+See [Common issues](../faq/common-issues.md) or contact [support@finautoindia.com](mailto:support@finautoindia.com). Do not share API keys or PAN in email.

@@ -1,140 +1,89 @@
-#  <h2 style="font-weight: bold; color: #0073e6;">🛠️ Installation Process – Finauto</h2>
-
-This guide walks you through the complete installation process of the **Finauto Client Software**, from registration to setting up Tally integration.
-
+---
+title: Installation
+client_version: "9.0"
+keywords:
+  - install
+  - download
+  - tally plugin
+  - odbc
+  - setup
+symptoms:
+  - tally connection error port 9000
+  - client will not start
 ---
 
-## 🔐 <span style="color:#2ecc71">1. Create Your Login Profile</span>
+# Installation
 
-To get started:
+Install the FinAuto Client, connect your cloud account, and prepare Tally for ODBC import.
 
-- Visit: 🔗 [https://www.finautoindia.com](https://www.finautoindia.com)
-- Click on the **Try Now** tab to register and create your login credentials.
-- Once registered, your **login profile** will be created and activated.
+## Prerequisites
 
----
+- FinAuto cloud account ([register](https://www.finautoindia.com) or [log in](https://www.finautoindia.com/user/login))
+- Windows PC with administrator rights to run the `.exe` installer
+- TallyPrime (or supported Tally version) if you plan to import from Tally
 
-## 🔑 <span style="color:#2ecc71">2. Existing Users – Direct Login</span>
+## Steps
 
-If you already have a login profile:
+### Step 1: Create or access your cloud account
 
-- Go to 🔗 [https://www.finautoindia.com/user/login](https://www.finautoindia.com/user/login)
-- Enter your registered email and use the OTP received in your inbox.
-- You'll be redirected to your **personal user dashboard**.
+1. Visit [finautoindia.com](https://www.finautoindia.com) and register, or log in at [finautoindia.com/user/login](https://www.finautoindia.com/user/login).
+2. Use OTP email login to reach your user dashboard.
 
----
+### Step 2: Download and install the client
 
-## 💾 <span style="color:#2ecc71">3. Download & Install the Client Software</span>
+1. From the dashboard **Downloads** section, download the latest FinAuto Client `.exe`.
+2. Run the installer and finish the setup wizard.
+3. Launch **FinAuto Client** from the desktop shortcut.
 
-- After logging in, go to the **Downloads** section.
-- Download the latest **`.exe` installer**.
-- Run the installer. After installation, you'll see a desktop icon:  
-  🖥️ **Finauto Client**
+### Step 3: Configure service connection
 
----
+1. Open **Configuration → Service** in the client.
+2. Enter your cloud **domain** and **API key** (generate the key from your FinAuto login dashboard).
+3. Click **Update** to sync metadata.
 
-## 📁 <span style="color:#2ecc71">4. Dashboard Features After Login</span>
+See [Service settings](../configuration/service.md) for details.
 
-Once logged in, your dashboard will display:
+![FinAuto cloud user dashboard with Downloads section and subscription details](../assets/images/configuration/install-dashboard-01.png)
 
-- **Current Subscription**  
-  Track your plan, activation status, and eligible entities.
+*Screenshot: FinAuto Client v9.0 — cloud dashboard reference for downloads and API key*
 
-- **Demo Data (Excel)**  
-  A ZIP file to test the software with sample Excel imports.
+### Step 4: Install the Tally plugin (tcodes.tcp)
 
-- **Demo Data (Tally)**  
-  For testing Tally integration with vouchers, ledgers, etc.
+1. In Tally, open **Help → F4: Add-Ons**.
+2. Add the plugin path from your FinAuto Client install folder, for example:  
+   `C:\Users\<you>\AppData\Local\Programs\Finauto Client\tcodes.tcp`
 
-- **Templates Section**  
-  Download templates for accounting policies and notes.  
-  These can be imported into the client software via:  
-  `Reports → Customise → Import`.
+![Tally Help F4 Add-Ons screen showing FinAuto plugin path](../assets/images/configuration/install-tally-f4-01.png)
 
----
+![Tally TDL configuration confirming tcodes.tcp plugin](../assets/images/configuration/install-tally-tdl-01.png)
 
-## 🔌 <span style="color:#2ecc71">5. Setup Tally Plugin (tcodes.tcp)</span>
+### Step 5: Enable Tally ODBC (port 9000)
 
-Before starting, add the Finauto plugin in Tally:
+1. In Tally: **Help → Settings → Connectivity → Client/Server Configuration**.
+2. Set mode to **Both**.
+3. Save and **restart Tally** when prompted.
 
-1. Open Tally and go to `Help → F4: Add-Ons`.
-2. Add the plugin path:  
-   `C:\Users\Win10\AppData\Local\Programs\Finauto Client\tcodes.tcp`
+![Tally ODBC client/server configuration set to Both mode](../assets/images/configuration/install-tally-odbc-01.png)
 
-✅ A screenshot is provided below to guide plugin placement.
+### Step 6: Verify the client opens
 
-![tallyhelpf4 Tab Screenshot](../assets/images/tallyhelpf4.PNG)
+Open the client, select or create a company, and confirm the menu bar and company selector appear. Use the <i class="bi bi-question-circle"></i> **Help** icon on any screen to open contextual documentation.
 
-![tallytdlconfig Tab Screenshot](../assets/images/tallytdlconfig.PNG)
+## Related links
 
-## 🔌<span style="color:#2ecc71">6. Set Up the ODBC Settings in Tally</span>
+- [Service configuration](../configuration/service.md)
+- [Tally settings](../configuration/tally.md)
+- [Manage companies](company/index.md)
+- [Import from Tally](import/tally.md)
 
-a. Open **Tally**.
+## Troubleshooting
 
-b. Navigate to:  
-   `Help → Settings → Connectivity → Client/Server Configuration`
+| Symptom | Likely cause | Resolution |
+|---------|--------------|------------|
+| Tally connection error on port 9000 | Tally not running or ODBC disabled | Open Tally, enable ODBC on port **9000**, restart Tally |
+| Invalid API key message | Expired or rotated key | Generate a new key at [finautoindia.com/user/login](https://www.finautoindia.com/user/login), update under **Configuration → Service** |
+| Plugin not listed in Tally | Wrong path to `tcodes.tcp` | Re-add plugin under **Help → F4: Add-Ons** |
 
-c. Under **Client/Server Configuration**, select **"Both"** as the mode.
+See also [Common issues](../faq/common-issues.md).
 
-d. Press `Enter` repeatedly to exit and save the configuration.
-
-🟢 You should see the message:  
-**"Restart Tally to apply the changes."**
-
-✅ A screenshot is provided below to guide you through the ODBC setup in Tally.
-
-![ODBCSet Tab Screenshot](../assets/images/ODBCSet.PNG)
-![odbcopt Tab Screenshot](../assets/images/odbcopt.PNG)
-![optionchoose Tab Screenshot](../assets/images/optionchoose.PNG)
-![odbcclose Tab Screenshot](../assets/images/odbcclose.PNG)
----
-
-## 🚀 <span style="color:#2ecc71">7. You're Ready to Use the Software</span>
-
-The Finauto Client is now installed and connected with Tally.
-
-Each feature inside the client software is guided with a **🛈 Help icon**, linking directly to this documentation for step-by-step guidance.
-
-Enjoy seamless automation and simplified financial reporting with **Finauto**.
-
-## 🧩 <span style="color:#2ecc71">Step 8: Manual Ledger Code Assignment (If Carry Code / Auto Code not used)</span>
-
-After the software is ready to use and installed successfully, you must ensure that all ledgers in Tally have proper codes assigned for accurate financial statement generation.
-
-### 📝 Instructions:
-
-1. **Login to Finauto client portal** at 🔗 [https://www.finautoindia.com/user/login](https://www.finautoindia.com/user/login)
-2. Download the file named **`tally_codes`** under your login dashboard.
-3. Open **Tally** and go to the custom code field (activated via plugin) under ledger configuration.
-4. **Manually enter the codes** as shown in the `tally_codes` file.
-
-> 📌 **Note:** This step is only required if:
-> - 🛑 You are **not using** the **Carry Code** feature.
-> - 🛑 You are **not using** the **Auto Code** feature.
----
-### 🧠 Additional Features for Tally users:
-
-- 🗂️ **Codes can also be assigned at the group level** — specifically the **last level group** (i.e., the group just above the ledger).
-  - ✅ If a code is assigned at the group level, **all ledgers** under that group will **automatically inherit** the group code.
-  
-- ⭐ **Special Treatment Ledgers**:  
-  Users can assign special codes for ledgers that require **custom presentation** or **grouping treatment** in the generated financial statements.
-
-- 🔁 **Auto Group-Level Code Assignment**:
-  - If the **Tally plugin (`tcodes.tcp`)** is installed and remains active, any **new ledger created under an already-coded group** will automatically receive the group’s code.
-  - Similarly, when a ledger is **moved from one group to another**, the ledger’s code is automatically updated based on the **new group code**.
-
----
-
-### ⚠️ Warning:
-
-If **any ledger** with an **opening or closing balance** is **not assigned a code**, an **error** will appear in the Finauto client during **Balance Sheet generation**, indicating unclassified ledgers.
-
-📸 Refer to the screenshots below for:
-
-- Group/Ledger code entry screen in Tally.
-![grouplevelcode Screenshot](../assets/images/grouplevelcode.PNG)
-![ledgerlevelcode Screenshot](../assets/images/ledgerlevelcode.PNG)
-
-
-- Error prompt shown in the Finauto client if codes are missing.
+**Need more help?** Contact [support@finautoindia.com](mailto:support@finautoindia.com). Do not share API keys or PAN in email.

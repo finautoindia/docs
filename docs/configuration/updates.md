@@ -1,25 +1,56 @@
-🔄 Update Tab
-The Update tab alerts users whenever a new version of the software is available.
+---
+title: Software Updates
+client_version: "9.0"
+controller: default
+function: update
+keywords:
+  - update
+  - upgrade
+  - client version
+symptoms:
+  - update failed
+  - client out of date
+---
 
-🔔 How It Works
-When a new version is released, the Update tab will show a notification.
+# Software updates
 
-Users are prompted to update to the latest version to access new features and improvements.
+Download and install the latest FinAuto Client when a new version is available.
 
-📥 Downloading and Installing the Update
-Click the Update button when notified.
+## Prerequisites
 
-The new .exe file will be automatically downloaded.
+- FinAuto Client installed
+- Internet access to FinAuto cloud services
 
-Run the downloaded file to install the new version.
+## Steps
 
-Once installation is complete, the updated version of the software is ready to use.
+### Step 1: Open updates
 
-⚠️ Ensure all work is saved before starting the update to avoid data loss.
+1. Go to **Configuration → Updates**.
+2. If a new version is available, the page shows a notification.
 
-✅ Benefits of Updating
-Access to the latest features and improvements
+![Software updates screen with download action](../assets/images/configuration/updates-01.png)
 
-Bug fixes and performance enhancements
+### Step 2: Download and install
 
-Compatibility with newer modules or data formats
+1. Click **Update** when prompted.
+2. Run the downloaded `.exe` installer.
+3. Relaunch the client and verify the version in the title bar or about dialog.
+
+!!! warning "Save work before updating"
+    Close imports and reports in progress. Complete or cancel long-running tasks before installing an update.
+
+## Related links
+
+- [Installation](../client/install.md)
+- [Service configuration](service.md)
+
+## Troubleshooting
+
+| Symptom | Likely cause | Resolution |
+|---------|--------------|------------|
+| Update download fails | Network or proxy | Retry; check firewall |
+| Client still shows old version | Installer not run | Re-run downloaded installer |
+
+See also [Common issues](../faq/common-issues.md).
+
+**Need more help?** Contact [support@finautoindia.com](mailto:support@finautoindia.com). Do not share API keys or PAN in email.

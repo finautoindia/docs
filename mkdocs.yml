@@ -1,63 +1,221 @@
-site_name: Finauto Docs
-site_description: Help and Documentation for Finauto Software
+site_name: FinAuto Docs
+
+site_description: Help and documentation for FinAuto Client and cloud services
+
+site_url: https://finautoindia.github.io/docs/
+
+
+
 theme:
+
   name: material
+
   logo: assets/images/logo.png
+
   favicon: assets/images/favicon.ico
+
   language: en
+
+  font:
+
+    text: Inter
+
+    code: Roboto Mono
+
   features:
+
     - navigation.instant
+
     - navigation.tracking
+
     - navigation.sections
+
     - navigation.top
+
+    - navigation.indexes
+
     - search.suggest
+
     - search.highlight
+
     - toc.integrate
+
     - content.tabs.link
+
     - content.code.copy
+
     - header.autohide
+
   markdown_extensions:
+
     - admonition
+
     - pymdownx.details
+
     - pymdownx.superfences
+
     - pymdownx.highlight
+
     - pymdownx.inlinehilite
+
     - pymdownx.magiclink
+
+    - attr_list
+
     - toc:
+
         permalink: true
+
   palette:
+
     - media: "(prefers-color-scheme: light)"
+
       scheme: default
-      primary: indigo
-      accent: blue
+
+      primary: custom
+
+      accent: custom
+
+      toggle:
+
+        icon: material/brightness-7
+
+        name: Switch to dark mode
+
     - media: "(prefers-color-scheme: dark)"
+
       scheme: slate
-      primary: indigo
-      accent: blue
+
+      primary: custom
+
+      accent: custom
+
+      toggle:
+
+        icon: material/brightness-4
+
+        name: Switch to light mode
+
+
+
+extra_css:
+
+  - stylesheets/finauto-theme.css
+
+  - https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css
+
+
+
+extra:
+
+  generator: false
+
+
+
+hooks:
+
+  - scripts/build_corpus.py
+
+
+
 nav:
+
   - Home: index.md
+
   - Client:
+
       - Introduction: client/intro.md
+
       - Installation: client/install.md
-      - Usage:
-          - Basic: client/usage/basic.md
-          - Advanced: client/usage/advanced.md
-      - Features:
-          - Fixed Assets:
-            - Register: client/depreciation/fixed_assets.md
-          - Share Capital:
-            - Import Process: client/sharecapital/importprocess.md
-          - Trial Balance:
-            - View Ledgers & Stock items : client/trialbalance/trialbalanceview.md
-          - Aging:
-            - Aging Report : client/aging/agingreport.md
-          - Reports:  
-            - Accounting Policies : client/reports/accountingpolicies.md
-          - Configuration: 
-            - Company Master: configuration/companymaster.md
-            - Updates      : configuration/updates.md
-            - CA Profiles      : configuration/caprofiles.md
-            - Settings     : configuration/settings.md
-      - FAQ:
-          - Common Issues: faq/common-issues.md
-                
+
+      - Company:
+
+          - Manage Companies: client/company/index.md
+
+          - Branches: client/company/branches.md
+
+          - Financial Years: client/company/fyear.md
+
+          - Export: client/company/export.md
+
+      - Import:
+
+          - From Excel: client/import/excel.md
+
+          - Import Data: client/import/import-data.md
+
+          - Other Formats: client/import/other-formats.md
+
+          - From Tally: client/import/tally.md
+
+          - Resolve Conflicts: client/import/resolve-conflict.md
+
+      - Trial Balance:
+
+          - Ledgers: client/trial-balance/ledgers.md
+
+          - Stock Items: client/trial-balance/stock.md
+
+      - Aging:
+
+          - Vouchers: client/aging/vouchers.md
+
+          - Trade Payables: client/aging/payables.md
+
+          - Trade Receivables: client/aging/receivables.md
+
+          - Report: client/aging/report.md
+
+      - Fixed Assets:
+
+          - Register: client/depreciation/register.md
+
+          - Asset Shifts: client/depreciation/asset-shifts.md
+
+          - Depreciation Chart: client/depreciation/chart.md
+
+          - By Asset: client/depreciation/by-asset.md
+
+      - Share Capital:
+
+          - Authorised Capital: client/share/authorized.md
+
+          - Issued Capital: client/share/issued.md
+
+          - Buy Back: client/share/buyback.md
+
+          - Shareholders: client/share/holders.md
+
+          - Subscribed Capital: client/share/subscribed.md
+
+          - Capital Payments: client/share/payments.md
+
+          - Transfer Logs: client/share/transfer-logs.md
+
+          - Holding Report: client/share/holding-report.md
+
+      - Reports:
+
+          - Balance Sheet: client/reports/balance-sheet.md
+
+          - Customize: client/reports/customize.md
+
+  - Configuration:
+
+      - Updates: configuration/updates.md
+
+      - CA Profiles: configuration/caprofiles.md
+
+      - Service: configuration/service.md
+
+      - Coding: configuration/coding.md
+
+      - Cache Cleanup: configuration/cache.md
+
+      - Tally: configuration/tally.md
+
+  - FAQ:
+
+      - Common Issues: faq/common-issues.md
+
+

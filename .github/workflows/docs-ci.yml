@@ -1,0 +1,42 @@
+name: Docs CI
+
+on:
+  push:
+    branches: [main, master]
+    tags: ["v*"]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build documentation
+        run: mkdocs build --strict
+
+      - name: Validate help URL map
+        run: |
+          if [[ "${{ github.ref }}" == refs/tags/v* ]]; then
+            python scripts/validate_help_urls.py --strict
+          else
+            python scripts/validate_help_urls.py --partial
+          fi
+
+      - name: Check orphan assets
+        run: python scripts/check_orphan_assets.py --docs-dir docs
+
+      - name: Validate corpus
+        run: |
+          python scripts/build_corpus.py --docs-dir docs --site-dir site
+          python scripts/validate_corpus.py --corpus site/ai/corpus.jsonl
+
+      - name: RAG smoke
+        run: python scripts/rag_smoke.py --corpus site/ai/corpus.jsonl
