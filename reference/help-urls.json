@@ -2,7 +2,7 @@
   "_comment": "Canonical help map — validate with scripts/validate_help_urls.py",
   "base_url": "https://finautoindia.github.io/docs/",
   "entries": [
-    {"controller": "company", "function": "index", "docs_path": "client/company/index/", "title": "Manage Company"},
+    {"controller": "company", "function": "index", "docs_path": "client/company/", "title": "Manage Company"},
     {"controller": "company", "function": "branches", "docs_path": "client/company/branches/", "title": "Branches"},
     {"controller": "company", "function": "fyear", "docs_path": "client/company/fyear/", "title": "Financial Years"},
     {"controller": "company", "function": "export", "docs_path": "client/company/export/", "title": "Export Company Data"},
