@@ -16,7 +16,7 @@ MATRIX = [
     ("Import - From Tally", "tally", "import_data", "client/import/tally/"),
     ("Trial Balance - Ledgers", "ledger", "index", "client/trial-balance/ledgers/"),
     ("Configuration - Service", "settings", "service", "configuration/service/"),
-    ("Company (grid)", "company", "index", "client/company/index/"),
+    ("Company (grid)", "company", "index", "client/company/"),
 ]
 
 BASE_URL = "https://finautoindia.github.io/docs/"

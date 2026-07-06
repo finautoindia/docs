@@ -14,20 +14,27 @@ PATHS = [
     "client/import/tally/",
     "client/trial-balance/ledgers/",
     "configuration/service/",
-    "client/company/index/",
+    "client/company/",
 ]
 
 
 def check_url(path: str) -> tuple[bool, int]:
-    url = BASE + path
-    req = urllib.request.Request(url, method="HEAD")
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            return 200 <= resp.status < 400, resp.status
-    except urllib.error.HTTPError as exc:
-        return False, exc.code
-    except Exception:
-        return False, 0
+    candidates = [path]
+    if path.endswith("/index/"):
+        candidates.insert(0, path.replace("/index/", "/"))
+    last_status = 0
+    for candidate in candidates:
+        url = BASE + candidate
+        try:
+            req = urllib.request.Request(url, method="GET")
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                if 200 <= resp.status < 400:
+                    return True, resp.status
+        except urllib.error.HTTPError as exc:
+            last_status = exc.code
+        except Exception:
+            last_status = 0
+    return False, last_status
 
 
 def main() -> int:
