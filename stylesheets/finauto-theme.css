@@ -377,3 +377,131 @@ a.fa-docs-menu-tile:hover {
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
 }
+
+/* Screen badge (articles opened from client Help) */
+.fa-docs-screen-badge {
+  align-items: center;
+  background: linear-gradient(to right, #f0f9ff, #fff);
+  border: 1px solid var(--fa-border);
+  border-left: 4px solid var(--fa-secondary);
+  border-radius: var(--fa-radius-sm);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  gap: 0.5rem 1rem;
+  margin: 0 0 1.25rem;
+  padding: 0.65rem 1rem;
+}
+
+.fa-docs-screen-badge__label {
+  color: var(--fa-text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fa-docs-screen-badge__path code {
+  background: #fff;
+  border: 1px solid var(--fa-border);
+  border-radius: 6px;
+  color: var(--fa-primary);
+  font-size: 0.8rem;
+  padding: 0.15rem 0.45rem;
+}
+
+[data-md-color-scheme="slate"] .fa-docs-screen-badge {
+  background: var(--fa-surface-alt);
+}
+
+/* Step cards (auto-wrapped by finauto-docs.js) */
+.fa-docs-step {
+  background: #fff;
+  border: 1px solid var(--fa-border);
+  border-radius: var(--fa-radius-sm);
+  box-shadow: var(--fa-shadow-sm);
+  margin: 1rem 0 1.25rem;
+  overflow: hidden;
+}
+
+.fa-docs-step .fa-docs-step-heading,
+.fa-docs-step > h3 {
+  background: linear-gradient(to right, #f8fafc, #fff);
+  border-bottom: 1px solid #f1f5f9;
+  color: var(--fa-primary) !important;
+  font-size: 1rem !important;
+  margin: 0 !important;
+  padding: 0.85rem 1.15rem;
+}
+
+.fa-docs-step > p,
+.fa-docs-step > ul,
+.fa-docs-step > ol,
+.fa-docs-step > .admonition {
+  margin-left: 1.15rem;
+  margin-right: 1.15rem;
+}
+
+.fa-docs-step > p:last-child,
+.fa-docs-step > ul:last-child {
+  margin-bottom: 1rem;
+}
+
+[data-md-color-scheme="slate"] .fa-docs-step {
+  background: var(--fa-surface-alt);
+}
+
+/* Skip duplicate h1 box when page header present */
+.fa-docs-page-header + h1,
+.fa-docs-screen-badge + .fa-docs-page-header + h1 {
+  background: transparent;
+  border: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.md-typeset .fa-docs-page-header h1 {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer note */
+.fa-docs-footer-note {
+  background: #071f33;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem 1rem;
+  text-align: center;
+}
+
+.fa-docs-footer-note a {
+  color: #93c5fd;
+}
+
+/* Prerequisites callout */
+.md-typeset h2#prerequisites + p,
+.md-typeset h2#prerequisites + ul {
+  background: var(--fa-surface-alt);
+  border: 1px solid var(--fa-border);
+  border-radius: var(--fa-radius-sm);
+  margin-top: 0.5rem;
+  padding: 0.85rem 1.1rem;
+}
+
+/* Search highlight */
+.md-search-result__article {
+  font-size: 0.88rem;
+}
+
+.md-typeset code {
+  border-radius: 4px;
+  font-size: 0.85em;
+  padding: 0.1em 0.35em;
+}
+
+/* Bi icons in tables */
+.md-typeset table .bi {
+  color: var(--fa-secondary);
+  margin-right: 0.25rem;
+}
