@@ -13,9 +13,13 @@ symptoms:
   - locked financial year skipped
 ---
 
+<div class="fa-docs-page-header" markdown="1">
+
 # Import from Excel
 
-Upload FY workbook data (ledgers, stock, fixed assets, share capital, vouchers) or a full company export package for the selected company and financial year.
+Upload FY workbook data or a full company export package for the selected company and financial year.
+
+</div>
 
 ## Prerequisites
 

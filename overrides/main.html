@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block htmltitle %}
+  {% if page.meta and page.meta.title %}{{ page.meta.title }} · FinAuto Help{% else %}{{ super() }}{% endif %}
+{% endblock %}
+
+{% block content %}
+  {% if page and page.meta and page.meta.controller %}
+  <aside class="fa-docs-screen-badge" aria-label="Client screen reference">
+    <span class="fa-docs-screen-badge__label">FinAuto Client screen</span>
+    <span class="fa-docs-screen-badge__path"><code>{{ page.meta.controller }}/{{ page.meta.function }}</code></span>
+  </aside>
+  {% endif %}
+  {{ super() }}
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+  <div class="fa-docs-footer-note">
+  FinAuto Help · <a href="mailto:support@finautoindia.com">support@finautoindia.com</a>
+  </div>
+{% endblock %}

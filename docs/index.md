@@ -1,76 +1,88 @@
+---
+title: FinAuto Help
+hide:
+  - toc
+---
+
 <div class="fa-docs-hero" markdown="1">
 
-# FinAuto Documentation
+# FinAuto
 
-Official help and user guide for **FinAuto Client** — import trial balances, code ledgers, generate Schedule III–ready financial statements, and manage fixed assets, share capital, and aging from one desktop application.
+<p class="fa-docs-hero__lead">
+Step-by-step guides for every screen in FinAuto Client. Open <strong>Help</strong> from the app menu to jump to the matching topic.
+</p>
 
-</div>
-
-## Purpose
-
-This site is the **complete reference** for FinAuto Client modules. Each screen in the client includes a **Help** icon that opens the matching section here.
-
-- Step-by-step workflows for every menu item
-- Configuration for Tally, cloud mode, API keys, and service settings
-- Troubleshooting for common installation and import issues
-
-## Browse by module
-
-<div class="fa-docs-grid" markdown="1">
-
-<div class="fa-docs-card fa-docs-card-with-icon" markdown="1">
-
-![Company module](assets/icons/company.svg){ .fa-docs-card-icon width="48" }
-
-### Company & import
-
-- Company master, branches, and FY export
-- Excel, Tally, and other format imports
-- Trial balance ledgers and stock items
-
-</div>
-
-<div class="fa-docs-card fa-docs-card-with-icon" markdown="1">
-
-![Reporting module](assets/icons/reports.svg){ .fa-docs-card-icon width="48" }
-
-### Reporting & compliance
-
-- Balance sheet generation (cloud / local)
-- Fixed assets register and depreciation
-- Share capital and holding reports
-- Trade receivables / payables aging
-
-</div>
-
-<div class="fa-docs-card fa-docs-card-with-icon" markdown="1">
-
-![Configuration module](assets/icons/configuration.svg){ .fa-docs-card-icon width="48" }
-
-### Configuration
-
-- Service updates and coding rules
-- Tally ODBC and TDL setup
-- CA profiles and cache cleanup
-
+<div class="fa-docs-hero__actions">
+<a class="fa-docs-hero__cta" href="client/install/"><i class="bi bi-download"></i> Install guide</a>
+<a class="fa-docs-hero__cta fa-docs-hero__cta--ghost" href="https://www.finautoindia.com/user/login" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Cloud login</a>
 </div>
 
 </div>
 
-## How to use this site
+<div class="fa-docs-menu-grid" markdown="1">
 
-1. Use the **left navigation** to open a module, or **search** from the header.
-2. Follow screenshots and numbered steps in each article.
-3. After a client update, check **Configuration → Updates** in the app and refresh this site for new topics.
+<a class="fa-docs-menu-tile" href="client/company/">
+<span class="fa-docs-menu-tile__icon"><img src="assets/icons/company.svg" alt="" width="40" height="40"></span>
+<strong>Company</strong>
+<span>Companies, branches, FY, export</span>
+</a>
 
-## FinAuto cloud login
+<a class="fa-docs-menu-tile" href="client/import/">
+<span class="fa-docs-menu-tile__icon"><img src="assets/icons/import.svg" alt="" width="40" height="40"></span>
+<strong>Import</strong>
+<span>Excel, Tally, other formats</span>
+</a>
 
-Access your FinAuto cloud account (API keys, licensing, uploads):
+<a class="fa-docs-menu-tile" href="client/trial-balance/">
+<span class="fa-docs-menu-tile__icon"><img src="assets/icons/trial-balance.svg" alt="" width="40" height="40"></span>
+<strong>Trial Balance</strong>
+<span>Ledgers and stock items</span>
+</a>
 
-<a class="fa-docs-cta" href="https://www.finautoindia.com/user/login" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right fa-docs-icon"></i>Open FinAuto Login</a>
+<a class="fa-docs-menu-tile" href="client/aging/">
+<span class="fa-docs-menu-tile__icon"><img src="assets/icons/aging.svg" alt="" width="40" height="40"></span>
+<strong>Aging</strong>
+<span>Receivables, payables, reports</span>
+</a>
+
+<a class="fa-docs-menu-tile" href="client/depreciation/">
+<span class="fa-docs-menu-tile__icon"><img src="assets/icons/depreciation.svg" alt="" width="40" height="40"></span>
+<strong>Fixed Assets</strong>
+<span>Register, shifts, depreciation</span>
+</a>
+
+<a class="fa-docs-menu-tile" href="client/share/">
+<span class="fa-docs-menu-tile__icon"><img src="assets/icons/share.svg" alt="" width="40" height="40"></span>
+<strong>Share</strong>
+<span>Capital, holders, transfers</span>
+</a>
+
+<a class="fa-docs-menu-tile" href="client/reports/">
+<span class="fa-docs-menu-tile__icon"><img src="assets/icons/reports.svg" alt="" width="40" height="40"></span>
+<strong>Reports</strong>
+<span>Balance sheet, customize</span>
+</a>
+
+<a class="fa-docs-menu-tile" href="configuration/">
+<span class="fa-docs-menu-tile__icon"><img src="assets/icons/configuration.svg" alt="" width="40" height="40"></span>
+<strong>Configuration</strong>
+<span>Service, Tally, coding, updates</span>
+</a>
+
+</div>
+
+<div class="fa-docs-start" markdown="1">
+
+## New here?
+
+1. [Install FinAuto Client](client/install.md) on your PC.
+2. Complete [Service configuration](configuration/service.md) and create a [company](client/company/index.md).
+3. [Import trial balance](client/import/excel.md) data, then generate a [balance sheet](client/reports/balance-sheet.md).
+
+</div>
+
+<a class="fa-docs-cta" href="https://www.finautoindia.com/user/login" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> FinAuto cloud account</a>
 
 ---
 
-**Need help not listed here?** Contact **support@finautoindia.com**. Do not share API keys or PAN in email.
-
-<!-- asset-refs: assets/icons/aging.svg assets/icons/depreciation.svg assets/icons/import.svg assets/icons/share.svg assets/icons/trial-balance.svg assets/images/favicon.png -->
+**Support:** [support@finautoindia.com](mailto:support@finautoindia.com) — do not email API keys or PAN.

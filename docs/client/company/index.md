@@ -14,9 +14,13 @@ symptoms:
   - cannot create company
 ---
 
-# Manage company
+<div class="fa-docs-page-header" markdown="1">
 
-Create and maintain companies, assign CA profiles, set depreciation methods, and open branches, financial years, and export actions from the company grid.
+# Manage Company
+
+Create companies, set PAN and depreciation method, and manage branches, financial years, and exports from the company grid.
+
+</div>
 
 ## Prerequisites
 

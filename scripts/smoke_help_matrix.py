@@ -12,12 +12,16 @@ import urllib.request
 from pathlib import Path
 
 MATRIX = [
-    ("Aging - Report", "aging", "report", "client/aging/report/"),
-    ("Import - From Tally", "tally", "import_data", "client/import/tally/"),
-    ("Trial Balance - Ledgers", "ledger", "index", "client/trial-balance/ledgers/"),
-    ("Configuration - Service", "settings", "service", "configuration/service/"),
-    ("Company (grid)", "company", "index", "client/company/"),
+    ("Aging - Report", "aging", "report", "client/aging/report"),
+    ("Import - From Tally", "tally", "import_data", "client/import/tally"),
+    ("Trial Balance - Ledgers", "ledger", "index", "client/trial-balance/ledgers"),
+    ("Configuration - Service", "settings", "service", "configuration/service"),
+    ("Company (grid)", "company", "index", "client/company"),
 ]
+
+
+def _norm_path(path: str) -> str:
+    return path.strip("/")
 
 BASE_URL = "https://finautoindia.github.io/docs/"
 
@@ -64,7 +68,7 @@ def main() -> int:
         help_id = f"{controller}-{function}"
         map_path = lookup.get((controller, function), "")
         site_ok = site_has_path(args.site_dir, expected_path)
-        map_ok = map_path == expected_path
+        map_ok = _norm_path(map_path) == _norm_path(expected_path)
         api_ok = "n/a"
         if args.api_base:
             status, url = fetch_help_api(args.api_base, help_id)
