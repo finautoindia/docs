@@ -63,9 +63,9 @@ def load_map(path: Path) -> list[dict]:
 
 
 def site_has_path(site_dir: Path, docs_path: str) -> bool:
-    rel = docs_path.strip("/").replace("/", "\\")
-    index_html = site_dir / rel / "index.html"
-    flat_html = site_dir / f"{rel}.html"
+    parts = [p for p in docs_path.strip("/").split("/") if p]
+    index_html = site_dir.joinpath(*parts, "index.html")
+    flat_html = site_dir.joinpath(*parts[:-1], f"{parts[-1]}.html") if parts else site_dir
     return index_html.is_file() or flat_html.is_file()
 
 
